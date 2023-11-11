@@ -17,14 +17,14 @@ mainEl.appendChild(h1)
 /* Task 1.3 - Add a class of flex-ctr to mainEl. */
 mainEl.className = "flex-ctr"
 
+/* Task 2.0 - Select and cache the <nav id="top-menu">element in a variable named topMenuEl. */
+const topMenuEl = document.querySelector('#top-menu')
 
+/* Task 2.1 - Set the height topMenuElelement to be 100%. */
+topMenuEl.style.height = '100%'
 
-
-
-
-
-
-
+/* Task 2.2 - Set the background color of topMenuElto the value stored in the --top-menu-bgCSS custom property. */
+topMenuEl.style.backgroundColor = '#0e9aa7'
 
 
 
