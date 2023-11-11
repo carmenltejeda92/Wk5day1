@@ -2,6 +2,14 @@
     Date: 10.30.23
     Purpose: Week5 day1 homework */
 
+// Menu data structure
+var menuLinks = [
+    {text: 'about', href: '/about'},
+    {text: 'catalog', href: '/catalog'},
+    {text: 'orders', href: '/orders'},
+    {text: 'account', href: '/account'},
+  ];
+
 const body = document.querySelector('body')
 /* Task 1.0 - Select and cache the <main>element in a variable named mainEl. */
 const mainEl = document.querySelector('#main')
@@ -28,6 +36,32 @@ topMenuEl.style.backgroundColor = '#0e9aa7'
 
 /* Task 2.3 - Add a class of flex-aroundto topMenuEl. */
 topMenuEl.className = 'flex-around'
+
+/* Task 3.1 - Iterate over the entire menuLinksarray and for each "link" object:
+    Create an <a>element.
+    On the new element, add an href attribute with its value set to the href property of the "link" object.
+    Set the new element's content to the value of the text property of the "link" object.
+    Append the new element to the topMenuElelement. */
+
+menuLinks.forEach((arr)=>{
+    const aTag = document.createElement('a')
+    const link = document.createTextNode(menuLinks[0].text)
+    aTag.appendChild(link)
+    aTag.href = menuLinks[0].href
+    topMenuEl.appendChild(aTag)
+})
+
+console.log(menuLinks[2].href)
+
+
+
+
+
+
+
+
+
+
 
 
 
