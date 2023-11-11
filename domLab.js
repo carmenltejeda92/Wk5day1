@@ -43,11 +43,11 @@ topMenuEl.className = 'flex-around'
     Set the new element's content to the value of the text property of the "link" object.
     Append the new element to the topMenuElelement. */
 
-menuLinks.forEach((arr)=>{
+menuLinks.forEach((arr, i)=>{
     const aTag = document.createElement('a')
-    const link = document.createTextNode(menuLinks[0].text)
+    const link = document.createTextNode(menuLinks[i].text)
     aTag.appendChild(link)
-    aTag.href = menuLinks[0].href
+    aTag.href = menuLinks[i].href
     topMenuEl.appendChild(aTag)
 })
 
